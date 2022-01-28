@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>zz&#39;s blog</title>
+  
+  
+  <link href="https://oblivate1.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://oblivate1.github.io/"/>
+  <updated>2022-01-28T19:08:01.062Z</updated>
+  <id>https://oblivate1.github.io/</id>
+  
+  <author>
+    <name>zz</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://oblivate1.github.io/2022/01/01/hello-world/"/>
+    <id>https://oblivate1.github.io/2022/01/01/hello-world/</id>
+    <published>2021-12-31T16:00:00.000Z</published>
+    <updated>2022-01-28T19:08:01.062Z</updated>
+    
+    <content type="html"><![CDATA[<p>zz也能学会的hexo入门</p><span id="more"></span><h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p><code>hexo n(new) XXarticle</code></p><h3 id="文章属性"><a href="#文章属性" class="headerlink" title="文章属性"></a>文章属性</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 标题和创建时间，自带</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2022-01-25 15:24:17</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分类</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">c1</span></span><br><span class="line"><span class="comment"># 多级分类，注意：这是父子关系，不是同级关系</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">c1</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">c2</span></span><br><span class="line"><span class="comment"># 同级分类</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> [<span class="string">python</span>,<span class="string">模块</span>,<span class="string">PIL</span>]</span><br><span class="line"><span class="bullet">-</span> [<span class="string">python</span>,<span class="string">模块</span>,<span class="string">matplotlib</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单标签</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">tag1</span></span><br><span class="line"><span class="comment"># 多标签：</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tag1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tag2</span></span><br><span class="line"><span class="comment"># or</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">tag1</span>,<span class="string">tag2</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 摘要，写了就不会显示全文了</span></span><br><span class="line"><span class="comment"># 另一种：&lt;!-- more --&gt;，上面是摘要，下面是正文</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="string">我是摘要</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 文章封面</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">https://gitee.com/hoverload/fig-bed/raw/master/iceCube.jpg</span></span><br></pre></td></tr></table></figure><h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建博客</span></span><br><span class="line">hexo init XXblog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 渲染source里的md文件</span></span><br><span class="line">hexo g(generate)</span><br><span class="line"><span class="comment"># 本地预览</span></span><br><span class="line">hexo s(server)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建议部署先先清除缓存，然后g渲染，最后d部署。</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署（遇到git认证问题（10054）：使用git自带的bash or 关掉代理）</span></span><br><span class="line">hexo d(deploy)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 还有，传到github后，有时blog没有立刻变化，，我是 强制刷新+等上一分钟，再看就好了</span></span><br></pre></td></tr></table></figure><p>注：新建、删除或修改<strong>文章</strong>后，不需要重启hexo server，刷新一下即可预览。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;zz也能学会的hexo入门&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="blog" scheme="https://oblivate1.github.io/tags/blog/"/>
+    
+  </entry>
+  
+</feed>
